@@ -4,7 +4,7 @@
     "jsx": "react",
     "module": "commonjs",
     "rootDir": ".",
-    "outDir": "dist",
+    "outDir": "build",
     "baseUrl": "./src",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -26,6 +26,7 @@
   "exclude": [
     "node_modules",
     "webpack.config.js",
-    "templates"
+    "templates",
+    "build"
   ]
 }
