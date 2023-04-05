@@ -1,16 +1,25 @@
 {
-  "name": "generator-miniapp",
+  "name": "@tientruong2907/generator-miniapp",
   "version": "0.0.1",
-  "description": "",
+  "description": "Generator for my miniapp using my micro-frontend architecture",
+  "main": "dist/index.js",
   "files": [
     "templates"
   ],
-  "keywords": [
-    "yeoman-generator"
-  ],
-  "author": "",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Tien Truong",
   "license": "ISC",
   "dependencies": {
     "yeoman-generator": "^5.8.0"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.21.4",
+    "@types/node": "^18.15.11",
+    "@types/yeoman-generator": "^5.2.11",
+    "eslint": "^8.37.0",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.3"
   }
 }
