@@ -4,12 +4,14 @@ import IPrompAnswers from "./IPrompAnswers";
 class ReactTypescriptMiniappGenerator<
     T extends Generator.GeneratorOptions,
 > extends Generator<T> {
+    private answers: IPrompAnswers = { projectName: this.appname };
+
     constructor(arg: string | string[], opt: T) {
         super(arg, opt);
     }
 
     protected async prompting() {
-        const answers: IPrompAnswers = await this.prompt([
+        this.answers = await this.prompt([
             {
                 type: "input",
                 name: "projectName",
@@ -17,7 +19,23 @@ class ReactTypescriptMiniappGenerator<
                 default: this.appname,
             },
         ]);
-        this.log("app name", answers.projectName);
+    }
+
+    protected writing() {
+        this.fs.copy(
+            this.templatePath("../templates"),
+            this.destinationPath("."),
+        );
+        this.fs.delete("../templates/package.temp.json");
+        this.fs.copyTpl(
+            this.templatePath("../templates/package.temp.json"),
+            this.destinationPath("package.json"),
+            { projectName: this.answers.projectName },
+        );
+    }
+
+    protected async install() {
+        await this.spawnCommandSync("git init .", []);
     }
 }
 
