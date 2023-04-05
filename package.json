@@ -1,16 +1,24 @@
 {
-  "name": "generator-miniapp",
+  "name": "@tientruong2907/generator-miniapp",
   "version": "0.0.1",
-  "description": "",
+  "description": "Generator for my miniapp using my microfrontend architecture",
   "files": [
     "templates"
   ],
   "keywords": [
     "yeoman-generator"
   ],
-  "author": "",
+  "author": "Tien Truong",
   "license": "ISC",
   "dependencies": {
     "yeoman-generator": "^5.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tientruongwork/miniapp-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tientruongwork/miniapp-generator/issues"
+  },
+  "homepage": "https://github.com/tientruongwork/miniapp-generator#readme"
 }
