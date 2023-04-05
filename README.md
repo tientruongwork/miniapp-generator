@@ -1,9 +1,8 @@
-# Miniapp-generator
-Microfrontend mini-app generator
-<INPROGRESS>
+# Miniapp-generator - INPROGRESS
+Microfrontend mini-app generator (React + Typescript)
 
 # Overview:
-- This repo use to generate a React + Typescript mini-apps which was built from scratch
+- This repo use to generate a **React + Typescript** mini-apps which was built from scratch
 - The mini-apps was implemented which necessary tools/library to optimize developer experiences
 
 # Installation
