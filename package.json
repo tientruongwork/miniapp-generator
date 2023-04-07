@@ -1,5 +1,5 @@
 {
-  "name": "@tientruong2907/generator-miniapp",
+  "name": "generator-tminiapp",
   "version": "0.0.1",
   "description": "Generator for my miniapp using my micro-frontend architecture",
   "main": "dist/index.js",
