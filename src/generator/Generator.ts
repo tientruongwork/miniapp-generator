@@ -4,7 +4,6 @@ import { ProjectPathByType, ProjectType } from "./constant";
 
 class Generator extends BaseGenerator {
     private answers: IPrompAnswers = {
-        projectName: "",
         projectType: ProjectType.REACT_TYPESCRIPT,
     };
 
@@ -38,12 +37,6 @@ class Generator extends BaseGenerator {
                         value: ProjectType.NODEJS_TYPESCRIPT,
                     },
                 ],
-            },
-            {
-                type: "input",
-                name: "projectName",
-                message: "Your project name",
-                default: this.appname,
             },
         ]);
         this.setProjectPaths();
