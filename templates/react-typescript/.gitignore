@@ -3,4 +3,3 @@ build
 coverage
 .idea
 yarn-error.log
-package.json

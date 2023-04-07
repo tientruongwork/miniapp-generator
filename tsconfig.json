@@ -4,7 +4,7 @@
     "jsx": "react",
     "module": "commonjs",
     "rootDir": ".",
-    "outDir": "build",
+    "outDir": "dist",
     "baseUrl": "./src",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -15,7 +15,6 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
     "noUnusedLocals": true,
@@ -27,6 +26,6 @@
     "node_modules",
     "webpack.config.js",
     "templates",
-    "build"
+    "dist"
   ]
 }

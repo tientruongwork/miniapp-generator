@@ -2,7 +2,7 @@
   "name": "@tientruong2907/generator-miniapp",
   "version": "0.0.1",
   "description": "Generator for my miniapp using my micro-frontend architecture",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "files": [
     "templates"
   ],
@@ -10,8 +10,7 @@
     "yeoman-generator"
   ],
   "scripts": {
-    "build": "rimraf build && tsc && yarn copy-template",
-    "copy-template": "copyfiles -u 'templates/.husky templates/* templates/**/* templates/**/**/*' build"
+    "build": "rimraf dist && tsc && cpy templates dist"
   },
   "author": "Tien Truong",
   "license": "ISC",
@@ -19,13 +18,19 @@
     "yeoman-generator": "^5.8.0"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.21.4",
     "@types/node": "^18.15.11",
     "@types/yeoman-generator": "^5.2.11",
-    "copyfiles": "^2.4.1",
+    "copy-webpack-plugin": "^11.0.0",
+    "cpy-cli": "^4.2.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.37.0",
+    "path": "^0.12.7",
     "prettier": "^2.8.7",
     "rimraf": "^4.4.1",
-    "typescript": "^5.0.3"
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.3",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "^3.0.0"
   }
 }

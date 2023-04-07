@@ -1,8 +1,8 @@
 {
-  "name": "react-typescript-miniapp",
+  "name": "generated-miniapp",
   "version": "0.0.1",
   "description": "",
-  "main": "src/index.tsx",
+  "main": "./src/index.tsx",
   "module": "true",
   "scripts": {
     "start": "webpack serve --port 3000",

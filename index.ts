@@ -1,3 +1,3 @@
-import ReactTypescriptMiniappGenerator from "./generator/ReactTypescriptMiniappGenerator";
+import Generator from "./src/generator/Generator";
 
-export default ReactTypescriptMiniappGenerator;
+export default Generator;
