@@ -13,3 +13,5 @@ Microfrontend mini-app generator (React + Typescript)
 - Create a new folder
 - Using command: `yo <your-path-that-cloned-this-repo>`
 - Enjoy !
+
+## Give me a star if you like it :P
